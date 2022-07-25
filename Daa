@@ -1,0 +1,35 @@
+- 👋 Hi, I’m @Nharendrakumar
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+Nharendrakumar/Nharendrakumar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+include <stdio.h> 
+include <time.h> 
+voidExch(int *p, int *q)
+{ 
+int temp = *p;  *p = *q;   *q = temp; 
+} 
+voidQuickSort(int a[], int low, int high)
+{ 
+int i, j, key, k; 
+if(low>=high) 
+return; 
+key=low;
+i=low+1; 
+j=high; 
+while(i<=j)
+{ 
+while ( a[i] <= a[key] ) 
+i=i+1; 
+while ( a[j] > a[key] ) 
+j=j -1; 
+if(i<j) 
+Exch(&a[i], &a[j]); 
+} 
+Exch(&a[j], &a[key]); 
+QuickSort(a, low, j-1); 
